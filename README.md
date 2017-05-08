@@ -18,11 +18,13 @@ Mail list : http://list.yararules.com/mailman/listinfo/yararules.com.signatures
 
 # Requirements
 
-Yara **version 3.0** or higher is required for most of the rules to work. This is mainly due to the use of the "pe" module introduced in that version.
+Yara **version 3.0** or higher is required for most of the rules to work. This is mainly due to the use of the "pe" module introduced in that version. 
 
 You can check your installed version with `yara -v`
 
 The available packages in Ubuntu 14.04 LTS default repositories are too old.  You can install from source or use the packages available in the [Remnux repository](https://launchpad.net/~remnux/+archive/ubuntu/stable).
+
+Also, you will need [Androguard Module](https://github.com/Koodous/androguard-yara) if you want to use the rules in mobile_malware category.
 
 # Categories
 
@@ -30,9 +32,18 @@ The available packages in Ubuntu 14.04 LTS default repositories are too old.  Yo
 
 In this section you will find Yara Rules aimed to detect anti debug and anti virtualization techniques used by malware to evade automated analyisis.
 
+## CVE_Rules
+
+In this section you will find Yara Rules specialised on the identification of specifics CVE
+
 ## Crypto
 
 In this section you will find Yara rules aimed to detect the existence of cryptographic algoritms.
+
+## Exploit Kits
+
+In this section you will find Yara rules aimed to detect the existence of Exploit Kits.
+
 
 ## Malicious Documents
 
@@ -40,11 +51,19 @@ In this section you will find Yara Rules to be used with documents to find if th
 
 ## Malware 
 
-In this section you will find Yara rules specialised on the indentification of well-known malware.
+In this section you will find Yara rules specialised on the identification of well-known malware.
 
 ## Packers
 
 In this section you will find Yara Rules aimed to detect well-known sofware packers, that can be used by malware to hide itself.
+
+## Webshells
+
+In this section you will find Yara rules specialised on the identification of well-known webshells.
+
+## Email
+
+In this section you will find Yara rules specialised on the identification of malicious e-mails.
 
 ## Malware Mobile
 
